@@ -1,458 +1,1273 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Analyst Power BI | Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Sarah Ursula Analyst Power bi" name="keywords">
-        <meta content="Sarah Ursula Analyst Power bi" name="description">
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sarah Ursula Randriarivelo - Data Analyst | Power BI & MCP Server | SAGE100 Support">
+  <title>Sarah Ursula Randriarivelo | Data Analyst Portfolio</title>
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+    <meta name="title" content="Sarah Ursula Randriarivelo | Data Analyst | Power BI & SAGE100 Expert">
+    <meta name="description" content="Business-oriented Data Analyst specializing in Power BI dashboards, MCP server integration, and SAGE100 technical support. Helping SMEs in Madagascar and beyond make data-driven decisions.">
+    <meta name="keywords" content="data analyst, power bi, sage100, mcp server, madagascar, business intelligence, data visualization, python, excel, freelance">
+    <meta name="author" content="Sarah Ursula Randriarivelo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sarah-ursula.netinter.ovh">
+  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sarah-ursula.netinter.ovh">
+    <meta property="og:title" content="Sarah Ursula Randriarivelo | Data Analyst">
+    <meta property="og:description" content="Business-oriented Data Analyst specializing in Power BI dashboards, MCP server integration, and SAGE100 technical support.">
+    <meta property="og:image" content="https://sarah-ursula.netinter.ovh/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+  
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sarah-ursula.netinter.ovh">
+    <meta property="twitter:title" content="Sarah Ursula Randriarivelo | Data Analyst">
+    <meta property="twitter:description" content="Business-oriented Data Analyst specializing in Power BI dashboards, MCP server integration, and SAGE100 technical support.">
+    <meta property="twitter:image" content="https://sarah-ursula.netinter.ovh/og-image.jpg">
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+  
+    <!-- Structured Data (JSON-LD for SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sarah Ursula Randriarivelo",
+      "jobTitle": "Data Analyst",
+      "url": "https://sarah-ursula.netinter.ovh",
+      "image": "https://sarah-ursula.netinter.ovh/assets/sarah-ursula-randriarivelo-profile.png",
+      "sameAs": [
+        "https://linkedin.com/in/sarah-ursula-randriarivelo",
+        "https://github.com/sarah-ursula-randriarivelo"
+      ],
+      "knowsAbout": ["Data Analysis", "Power BI", "Python", "SAGE100", "MCP Server", "Business Intelligence"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MG"
+      },
+      "alumniOf": "Orange Digital Center"
+    }
+    </script>
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH1HLH5M8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NH1HLH5M8B');
+  </script>
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH1HLH5M8B"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <style>
+    :root {
+      --pumpkin: #F77527;
+      --majorelle: #7449C8;
+      --pink-mist: #EBA2B4;
+      --violet-red: #C42B8B;
+      --honey: #FBB458;
+      --black: #0A0A0A;
+
+      --bg-primary: #0A0A0A;
+      --bg-secondary: #141414;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --text-primary: #FFFFFF;
+      --text-secondary: #B3B3B3;
+      --border: rgba(255, 255, 255, 0.1);
+      
+      --grad-1: linear-gradient(135deg, var(--pumpkin), var(--violet-red));
+      --grad-2: linear-gradient(135deg, var(--majorelle), var(--pink-mist));
+      --grad-hero: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 30%, #4a1942 60%, #f77527 100%);
+      --grad-text: linear-gradient(90deg, var(--pumpkin), var(--majorelle), var(--violet-red));
+      --grad-glow: linear-gradient(135deg, #7449C8, #C42B8B, #F77527, #EBA2B4);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #F8F9FA;
+      --bg-secondary: #FFFFFF;
+      --bg-card: rgba(0, 0, 0, 0.02);
+      --text-primary: #111111;
+      --text-secondary: #555555;
+      --border: rgba(0, 0, 0, 0.1);
+      --grad-hero: linear-gradient(135deg, #f0e6ff 0%, #e6d5f5 30%, #f5e6f0 60%, #ffd5c2 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: background 0.4s ease, color 0.4s ease;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      background: var(--bg-primary); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.4s;
+      padding: 1rem 0;
+    }
+    
+    .nav-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 2rem; max-width: 1400px; margin: 0 auto;
+    }
+    
+    .logo { 
+      font-weight: 800; font-size: 1.5rem; 
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a {
+      color: var(--text-secondary); text-decoration: none; font-size: 0.95rem;
+      transition: color 0.3s; font-weight: 500;
+    }
+    .nav-links a:hover { color: var(--pumpkin); }
+    
+    .controls { display: flex; gap: 0.8rem; align-items: center; }
+    .toggle-btn {
+      background: var(--bg-card); border: 1px solid var(--border); 
+      border-radius: 50%; width: 40px; height: 40px; 
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: var(--text-primary); transition: 0.3s; 
+      font-size: 1rem;
+    }
+    .toggle-btn:hover { 
+      border-color: var(--pumpkin); 
+      background: var(--grad-1);
+      color: white;
+      transform: scale(1.1);
+    }
+    .lang-btn { border-radius: 20px; width: auto; padding: 0 16px; font-weight: 600; }
+
+    /* Hero Section - New Layout */
+    #hero {
+      min-height: 100vh;
+      background: var(--grad-hero);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 2rem 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated gradient orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.5;
+      animation: float 10s ease-in-out infinite;
+    }
+    .orb-1 {
+      width: 500px; height: 500px;
+      background: var(--majorelle);
+      top: -150px; right: -100px;
+      animation-delay: 0s;
+    }
+    .orb-2 {
+      width: 400px; height: 400px;
+      background: var(--violet-red);
+      bottom: -100px; left: -50px;
+      animation-delay: -5s;
+    }
+    .orb-3 {
+      width: 300px; height: 300px;
+      background: var(--pumpkin);
+      top: 50%; right: 20%;
+      animation-delay: -3s;
+      opacity: 0.3;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+
+    .hero-container {
+      max-width: 1400px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      text-align: left;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-badge svg {
+      width: 20px;
+      height: 20px;
+      fill: url(#gradient);
+    }
+
+    .hero-content h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      line-height: 1.1;
+      background: linear-gradient(90deg, #9e9e9e, #ca375b, #d16625);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-content h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+      max-width: 540px;
+    }
+
+    .hero-form {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-input {
+      flex: 1;
+      min-width: 250px;
+      padding: 1rem 1.5rem;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-input:focus {
+      outline: none;
+      border-color: var(--pumpkin);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .btn-hero {
+      padding: 1rem 2.5rem;
+      background: var(--grad-glow);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 10px 30px rgba(247, 117, 39, 0.4);
+    }
+
+    .btn-hero:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(247, 117, 39, 0.5);
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    [data-i18n="btn_contact"] {
+      color: var(--text-secondary)!important;
+      border-color: var(--text-secondary)!important;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: var(--grad-glow);
+      color: white;
+      box-shadow: 0 8px 25px rgba(196, 43, 139, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(196, 43, 139, 0.5);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* Profile Photo with Gradient Effect */
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .profile-wrapper {
+      position: relative;
+      width: 450px;
+      height: 450px;
+    }
+
+    .profile-glow {
+      position: absolute;
+      inset: -20px;
+      background: var(--grad-glow);
+      border-radius: 50%;
+      filter: blur(40px);
+      opacity: 0.6;
+      animation: pulse-glow 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+
+    .profile-border {
+      position: absolute;
+      inset: -10px;
+      background: var(--grad-glow);
+      border-radius: 50%;
+      padding: 4px;
+      animation: rotate-border 8s linear infinite;
+    }
+
+    @keyframes rotate-border {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 2;
+      background: var(--bg-secondary);
+    }
+
+    .profile-stats {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      display: flex;
+      gap: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 3;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Scrolling Ticker */
+    .ticker {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ticker-content {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-item {
+      padding: 0 3rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .ticker-item::after {
+      content: '◆';
+      margin-left: 3rem;
+      color: var(--pumpkin);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Sections */
+    section { padding: 5rem 2rem; }
+    
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      margin-bottom: 3rem;
+      font-weight: 800;
+    }
+
+    .section-title span {
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* Skills Tags */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .skill-tag {
+      padding: 0.8rem 1.8rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      transition: all 0.3s;
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      background: var(--grad-1);
+      color: white;
+      border-color: transparent;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(247, 117, 39, 0.3);
+    }
+
+    /* Cards Grid */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--grad-glow);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--majorelle);
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .card-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Experience Timeline */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 3rem;
+    }
+
+    .timeline-item {
+      background: var(--bg-secondary);
+      border-left: 4px solid var(--majorelle);
+      padding: 2rem;
+      border-radius: 0 16px 16px 0;
+      margin-bottom: 2rem;
+      transition: all 0.3s;
+    }
+
+    .timeline-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-item h4 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item span {
+      color: var(--pumpkin);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-item p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Certificates */
+    .cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .cert-badge {
+      background: var(--grad-2);
+      color: white;
+      padding: 1.5rem 2.5rem;
+      border-radius: 16px;
+      font-weight: 600;
+      text-align: center;
+      min-width: 280px;
+      transition: all 0.3s;
+      box-shadow: 0 8px 25px rgba(116, 73, 200, 0.3);
+    }
+
+    .cert-badge:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 35px rgba(116, 73, 200, 0.4);
+    }
+
+    .cert-badge small {
+      display: block;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    /* Projects */
+    #projects {
+      background: var(--bg-secondary);
+    }
+
+    .project-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      transition: all 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--violet-red);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .project-link {
+      color: var(--pumpkin);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.3s;
+    }
+
+    .project-link:hover {
+      gap: 1rem;
+    }
+
+    /* Contact */
+    #contact {
+      text-align: center;
+      background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    }
+
+    .contact-desc {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact-btn {
+      padding: 1rem 2.5rem;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--text-primary);
+      text-decoration: none;
+      background: var(--bg-card);
+      transition: all 0.3s;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-btn:hover {
+      border-color: var(--pumpkin);
+      background: var(--grad-1);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(247, 117, 39, 0.3);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-form {
+        justify-content: center;
+      }
+
+      .hero-btns {
+        justify-content: center;
+      }
+
+      .profile-wrapper {
+        width: 350px;
+        height: 350px;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .profile-wrapper {
+        width: 280px;
+        height: 280px;
+      }
+
+      .profile-stats {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .ticker-item {
+        padding: 0 2rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* SVG Gradient Definition */
+    .svg-defs {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+      fill: currentColor;
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- SVG Gradients -->
+  <svg class="svg-defs">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#F77527;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#7449C8;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#C42B8B;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">S.U.R.</div>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#certificates" data-i18n="nav_certificates">Certificates</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="controls">
+        <button class="toggle-btn lang-btn" id="langToggle" aria-label="Switch language">🇬 EN</button>
+        <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          <span data-i18n="hero_badge">Available for freelance</span>
+        </div>
         
-        gtag('config', 'G-NH1HLH5M8B');
-        </script>
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Analyst BI portfolio </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
+        <h1 data-i18n="hero_title">Sarah Ursula Randriarivelo</h1>
+        <h2 data-i18n="hero_subtitle">Data Analyst orienté métier | IA & MCP server | Support technique SAGE100</h2>
+        <p data-i18n="hero_desc">I'm a business-oriented data analyst helping SMEs exploit and data-drive their activities. By combining Power BI with MCP servers, I deliver high-trust, professionally designed dashboards.</p>
+        
+        
+        <div class="hero-btns">
+          <a href="https://drive.google.com/file/d/1O2qY2yk2BP0MWHDb4mGx-ECRBZHv0Uui/view?usp=drivesdk" target="_blank" class="btn btn-primary" data-i18n="btn_cv">
+            <span>📄</span> <span data-i18n="btn_cv_text">View My CV</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="btn_contact">
+            <span data-i18n="btn_contact_text">Get in Touch</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <div class="profile-wrapper">
+          <div class="profile-glow"></div>
+          <div class="profile-border"></div>
+          <img 
+            src="assets/sarah-ursula-randriarivelo-profile.webp" 
+            alt="Sarah Ursula Randriarivelo - Data Analyst" 
+            class="profile-photo"
+            loading="eager"
+          >
+          <div class="profile-stats">
+            <div class="stat">
+              <div class="stat-value">15+</div>
+              <div class="stat-label" data-i18n="stat_dashboards">Dashboards</div>
             </div>
-        </div>
-        <!-- Nav Bar End -->
-
-
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid" style="min-width: 100%;">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/sarah-ursula-randriarivelo-profile.png" alt="Sarah Ursula Randriarivelo">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Sarah Ursula</h1>
-                                <h2></h2>
-                                <div class="typed-text">Consultant Power BI, Consultant Sage ERP, Consultant Microsoft, Data scrapper </div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="#contact">Hire Me</a>
-                                <a class="btn" href="#contact">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat">
+              <div class="stat-value">2+</div>
+              <div class="stat-label" data-i18n="stat_years">Years Exp.</div>
             </div>
+          </div>
         </div>
-        <!-- Hero End -->
+      </div>
+    </div>
 
+    <!-- Scrolling Ticker -->
+    <div class="ticker">
+      <div class="ticker-content">
+        <span class="ticker-item" data-i18n="ticker_1">POWER AUTOMATE</span>
+        <span class="ticker-item" data-i18n="ticker_2">EXCEL</span>
+        <span class="ticker-item" data-i18n="ticker_3">POWER BI</span>
+        <span class="ticker-item" data-i18n="ticker_4">DATA ANALYSIS</span>
+        <span class="ticker-item" data-i18n="ticker_5">SAGE100</span>
+        <span class="ticker-item" data-i18n="ticker_6">MCP SERVER</span>
+        <span class="ticker-item" data-i18n="ticker_7">POWER AUTOMATE</span>
+        <span class="ticker-item" data-i18n="ticker_8">EXCEL</span>
+        <span class="ticker-item" data-i18n="ticker_9">POWER BI</span>
+        <span class="ticker-item" data-i18n="ticker_10">DATA ANALYSIS</span>
+        <span class="ticker-item" data-i18n="ticker_11">SAGE100</span>
+        <span class="ticker-item" data-i18n="ticker_12">MCP SERVER</span>
+      </div>
+    </div>
+  </section>
 
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>I'm a freelancer</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    With strong acknowledge on Power BI, SQL, Python, I help the PMEs for their activities' data driven and build for them a report with beautiful insights.
-                                    But also, I'm working on various project of data extraction/scrapping.
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>Power BI</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>DAX</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Power query</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Transact_SQL</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Power Plateform Dataflows</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Python</p><p>50%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/sarah-ursula-randriarivelo-portfolio.jpg" alt="Sarah Ursula Randriarivelo">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-        
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Dashboard Design</h3>
-                                <p>
-                                    Adding beautiful and vivid colors on each reporting depending your requirements.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Data cleaning and transforming</h3>
-                                <p>
-                                    I'm giving a hand to do the ETL process for your data using powerful tools such SQL, Power Query.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Data analyse</h3>
-                                <p>
-                                    I'm using DAX  to create well-structured and accurate measures for each visuals on Power BI. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Python</h3>
-                                <p>
-                                    Nowadays, Big enterprises are using competitive intelligence to predict their future position on the market.
-                                    So I help them to get data all the data needed from different sources.
-                                    I'm using Selenium, Pandas and Beautifulsoup to do the Job. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Dec 2024 - Present day</div>
-                            <h2>Consultant Sage/Power BI Microsoft</h2>
-                            <h4>Anonymous Company</h4>
-                            <p>
-                                I'm building various kind of reporting on Power BI depending on clients'need 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Jun 2024 - Dec 2024</div>
-                            <h2>Data extraction validator</h2>
-                            <h4>Smartone.ai, Andohatapenaka Antananarivo</h4>
-                            <p>
-                                My role was to verify the accuracy of the extracted data from different e-commerce site that were scrapped
-                                by a robot. 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">Fev 2023 - May 2023 </div>
-                            <h2>Web Developer</h2>
-                            <h4>FID tsiadana, Antananarivo</h4>
-                            <p>
-                                I've been Built a website to manage status of activated anti-virus for each emloyees of the company. I've been in charge of assisting
-                                employees during technical problem and helped them to resolve it.  
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Job Experience End -->
-        
-        
+  <!-- Skills Section -->
+  <section id="about" style="background: var(--bg-primary);">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_skills">Technical Stack</span></h2>
+      <div class="skills-container">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">VBA</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Google Sheets</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Looker Studio</span>
+        <span class="skill-tag">Power Automate</span>
+        <span class="skill-tag">SAGE100</span>
+        <span class="skill-tag">MCP Server</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">R</span>
+      </div>
+    </div>
+  </section>
 
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1"> IMDB's Dashboard</li>
-                            <li data-filter=".filter-2">Web scrapping tools</li>
-                            <li data-filter=".filter-1"> Amazon Books Dashboard</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>eCommerce Website</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Product Landing Page</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript quiz game</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript drawing</h3>
-                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Social Mobile Apps</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Company Website</h3>
-                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" style="background: var(--bg-secondary);">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_services">Services</span></h2>
+      <div class="grid-3">
+        <div class="card">
+           <img src="assets/image_analytics_dashboard.webp" alt="Automated Dashboards Icon" class="service-icon" style="width: stretch;">
+          <h3 data-i18n="serv_1_title">Automated Dashboards</h3>
+          <p data-i18n="serv_1_desc">Build personalized, automated, business-oriented dashboards using Power BI & Excel tailored to your KPIs.</p>
         </div>
-        <!-- Portfolio End -->
-                
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+          <img src="assets/image_data_pipelines.webp" alt="Data Pipelines Icon" class="service-icon" style="width: stretch;">
+          <h3 data-i18n="serv_2_title">Data Pipelines & Cleaning</h3>
+          <p data-i18n="serv_2_desc">Help with data cleaning, transformation, and building reliable pipelines to exploit raw data efficiently.</p>
         </div>
-        <!-- Contact End -->
-
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Sarah Ursula Randriarivelo</h2>
-                        <h3>Lot 47 DA Antanetibe Ilafy</h3>
-                        <div class="footer-menu">
-                            <p>+261 38 68 959 99</p>
-                            <p>randriarivelo.ursula@gmail.com</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Sarah Ursula Portfolio</a>, All Right Reserved</p>
-                </div>
-            </div>
+        <div class="card">
+          <img src="assets/image_support_tool.webp" alt="SAGE100 Support Icon" class="service-icon" style="width: stretch;">
+          <h3 data-i18n="serv_3_title">SAGE100 Support</h3>
+          <p data-i18n="serv_3_desc">Hands-on technical support and troubleshooting for SAGE100 ERP users to ensure seamless operations.</p>
         </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" style="background: var(--bg-primary);">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_experience">Experience</span></h2>
+      <div class="grid-2">
+        <div>
+          <div class="timeline-item">
+            <h4 data-i18n="exp_title">Data Analyst</h4>
+            <span data-i18n="exp_time">2+ Years in the Data Analyst Market</span>
+            <p data-i18n="exp_desc">Delivered 15+ production-ready dashboards for SMEs. Integrated MCP server workflows with Power BI to ensure data accuracy, automation, and executive-level reporting standards.</p>
+          </div>
         </div>
+        <div>
+          <div class="timeline-item">
+            <h4 data-i18n="vol_title">M&E Dashboard Specialist (NGO)</h4>
+            <span data-i18n="vol_time">Monitoring & Evaluation Department</span>
+            <p data-i18n="vol_desc">Collaborated with NGO teams to design clear, concise, and actionable Excel dashboards. Streamlined data tracking processes to improve program impact assessment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_projects">Featured Projects</span></h2>
+      <div class="grid-2">
+        <div class="project-card">
+          <h3 data-i18n="proj_1_title"> Malagasy Job Market Analysis</h3>
+          <p data-i18n="proj_1_desc">Python-based data scraping, cleaning, and visualization to identify employment trends, skill demand, and regional opportunities in Madagascar.</p>
+          <a href="https://github.com/sarah-ursula-randriarivelo/job_offer_analysis" target="_blank" class="project-link" data-i18n="link_github">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+        <div class="project-card">
+          <h3 data-i18n="proj_2_title"> Malagasy Rent Analysis</h3>
+          <p data-i18n="proj_2_desc">Comprehensive rental market dataset analysis using Python. Built predictive models and interactive visualizations to map pricing dynamics.</p>
+          <a href="https://github.com/sarah-ursula-randriarivelo/rent_price_analysis" target="_blank" class="project-link" data-i18n="link_github">
+            View on GitHub <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+  <!-- Certificates Section -->
+  <section id="certificates" style="background: var(--bg-secondary);">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_certificates">Certifications</span></h2>
+      <div class="cert-grid">
+        <div class="cert-badge">
+          Microsoft Power BI
+          <small data-i18n="cert_1_org">Maven Analytics</small>
+        </div>
+        <div class="cert-badge">
+          PostgreSQL A to Z
+          <small data-i18n="cert_2_org">Udemy</small>
+        </div>
+        <div class="cert-badge">
+          Data Analysis on R
+          <small data-i18n="cert_3_org">Orange Digital Center</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-container">
+      <h2 class="section-title"><span data-i18n="section_contact">Let's Connect</span></h2>
+      <p class="contact-desc" data-i18n="contact_desc">Available for freelance projects, consulting. Fluent in French & English.</p>
+      <div class="contact-grid">
+        <a href="https://linkedin.com/in/sarah-ursula-randriarivelo" target="_blank" class="contact-btn">
+          <span>
+          <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg> </span> <span>LinkedIn</span>
+        </a>
+        <a href="mailto:randriarivelo.ursula@gmail.com" class="contact-btn">
+          <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg> <span>Gmail</span>
+        </a>
+        <a href="tel:+261378959056" class="contact-btn">
+          <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+         <span data-i18n="btn_phone">Phone</span>
+        </a>
+        <a href="https://wa.me/+261386895999" target="_blank" class="contact-btn">
+          <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+         <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p data-i18n="footer_text">&copy; 2026 Sarah Ursula Randriarivelo. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.6;" data-i18n="footer_tech"></p>
+  </footer>
+
+  <script>
+    // Translations
+    const translations = {
+      en: {
+        nav_about: "About",
+        nav_services: "Services",
+        nav_projects: "Projects",
+        nav_certificates: "Certificates",
+        nav_contact: "Contact",
+        hero_badge: "Available for freelance",
+        hero_title: "Sarah Ursula Randriarivelo",
+        hero_subtitle: "Data Analyst orienté métier | IA & MCP server | Support technique SAGE100",
+        hero_desc: "I'm a business-oriented data analyst helping SMEs exploit and data-drive their activities. By combining Power BI with MCP servers, I deliver high-trust, professionally designed dashboards.",
+        email_placeholder: "Enter your best email here",
+        btn_subscribe: "SUBSCRIBE NOW",
+        btn_cv_text: "View My CV",
+        btn_contact_text: "Get in Touch",
+        stat_dashboards: "Dashboards",
+        stat_years: "Years Exp.",
+        stat_clients: "Clients",
+        ticker_1: "POWER AUTOMATE",
+        ticker_2: "EXCEL",
+        ticker_3: "POWER BI",
+        ticker_4: "DATA ANALYSIS",
+        ticker_5: "SAGE100",
+        ticker_6: "MCP SERVER",
+        ticker_7: "POWER AUTOMATE",
+        ticker_8: "EXCEL",
+        ticker_9: "POWER BI",
+        ticker_10: "DATA ANALYSIS",
+        ticker_11: "SAGE100",
+        ticker_12: "MCP SERVER",
+        section_skills: "Technical Stack",
+        label_lang: "Portfolio Language:",
+        section_services: "Services",
+        serv_1_title: "Automated Dashboards",
+        serv_1_desc: "Build personalized, automated, business-oriented dashboards using Power BI & Excel tailored to your KPIs.",
+        serv_2_title: "Data Pipelines & Cleaning",
+        serv_2_desc: "Help with data cleaning, transformation, and building reliable pipelines to exploit raw data efficiently.",
+        serv_3_title: "SAGE100 Support",
+        serv_3_desc: "Hands-on technical support and troubleshooting for SAGE100 ERP users to ensure seamless operations.",
+        section_experience: "Experience",
+        exp_title: "Data Analyst",
+        exp_time: "2+ Years in the Data Analyst Market",
+        exp_desc: "Delivered 15+ production-ready dashboards for SMEs. Integrated MCP server workflows with Power BI to ensure data accuracy, automation, and executive-level reporting standards.",
+        vol_title: "M&E Dashboard Specialist (NGO)",
+        vol_time: "Monitoring & Evaluation Department",
+        vol_desc: "Collaborated with NGO teams to design clear, concise, and actionable Excel dashboards. Streamlined data tracking processes to improve program impact assessment.",
+        section_projects: "Featured Projects",
+        proj_1_title: "Malagasy Job Market Analysis",
+        proj_1_desc: "Python-based data scraping, cleaning, and visualization to identify employment trends, skill demand, and regional opportunities in Madagascar.",
+        proj_2_title: "Malagasy Rent Analysis",
+        proj_2_desc: "Comprehensive rental market dataset analysis using Python. Built predictive models and interactive visualizations to map pricing dynamics.",
+        link_github: "View on GitHub",
+        section_certificates: "Certifications",
+        cert_1_org: "Maven Analytics",
+        cert_2_org: "Udemy",
+        cert_3_org: "Orange Digital Center",
+        section_contact: "Let's Connect",
+        contact_desc: "Available for freelance projects, consulting. Fluent in French & English.",
+        btn_phone: "Phone",
+        footer_text: "© 2026 Sarah Ursula Randriarivelo. All rights reserved.",
+        footer_tech: ""
+      },
+      fr: {
+        nav_about: "À propos",
+        nav_services: "Services",
+        nav_projects: "Projets",
+        nav_certificates: "Certifications",
+        nav_contact: "Contact",
+        hero_badge: "Disponible pour freelance",
+        hero_title: "Sarah Ursula Randriarivelo",
+        hero_subtitle: "Data Analyst orientée métier | IA & Serveur MCP | Support technique SAGE100",
+        hero_desc: "Je suis une data analyste orientée métier qui aide les PME à exploiter et piloter leurs activités par la data. En combinant Power BI avec des serveurs MCP, je conçois des tableaux de bord professionnels et hautement fiables.",
+        email_placeholder: "Insira seu melhor e-mail aqui",
+        btn_subscribe: "ME INSCREVER",
+        btn_cv_text: "Voir mon CV",
+        btn_contact_text: "Me contacter",
+        stat_dashboards: "Dashboards",
+        stat_years: "Ans Exp.",
+        stat_clients: "Clients",
+        ticker_1: "POWER AUTOMATE",
+        ticker_2: "EXCEL",
+        ticker_3: "POWER BI",
+        ticker_4: "DATA ANALYSIS",
+        ticker_5: "SAGE100",
+        ticker_6: "MCP SERVER",
+        ticker_7: "POWER AUTOMATE",
+        ticker_8: "EXCEL",
+        ticker_9: "POWER BI",
+        ticker_10: "DATA ANALYSIS",
+        ticker_11: "SAGE100",
+        ticker_12: "MCP SERVER",
+        section_skills: "Stack Technique",
+        label_lang: "Langues du portfolio :",
+        section_services: "Services",
+        serv_1_title: "Tableaux de bord automatisés",
+        serv_1_desc: "Conception de dashboards personnalisés et automatisés sous Power BI & Excel, alignés sur vos KPI métier.",
+        serv_2_title: "Nettoyage & Pipelines de données",
+        serv_2_desc: "Nettoyage, transformation et création de pipelines fiables pour exploiter efficacement vos données brutes.",
+        serv_3_title: "Support SAGE100",
+        serv_3_desc: "Support technique et dépannage pour les utilisateurs de l'ERP SAGE100, afin d'assurer une continuité optimale.",
+        section_experience: "Expérience",
+        exp_title: "Data Analyste",
+        exp_time: "+2 ans sur le marché de l'analyse de données",
+        exp_desc: "Livraison de plus de 15 dashboards opérationnels pour des PME. Intégration de workflows serveur MCP avec Power BI pour garantir précision, automatisation et reporting de niveau direction.",
+        vol_title: "Spécialiste Dashboards S&E (ONG)",
+        vol_time: "Département Suivi & Évaluation",
+        vol_desc: "Collaboration avec les équipes ONG pour concevoir des tableaux de bord Excel clairs, concis et actionnables. Optimisation des processus de suivi pour améliorer l'évaluation d'impact des programmes.",
+        section_projects: "Projets Phares",
+        proj_1_title: "Analyse du marché de l'emploi malgache",
+        proj_1_desc: "Collecte, nettoyage et visualisation de données en Python pour identifier les tendances d'emploi, la demande de compétences et les opportunités régionales à Madagascar.",
+        proj_2_title: "Analyse du marché locatif malgache",
+        proj_2_desc: "Analyse complète des données du marché locatif avec Python. Création de modèles prédictifs et de visualisations interactives pour cartographier la dynamique des prix.",
+        link_github: "Voir sur GitHub",
+        section_certificates: "Certifications",
+        cert_1_org: "Maven Analytics",
+        cert_2_org: "Udemy",
+        cert_3_org: "Orange Digital Center",
+        section_contact: "Prenons contact",
+        contact_desc: "Disponible pour des missions freelance, du consulting. Bilingue Français / Anglais.",
+        btn_phone: "Téléphone",
+        footer_text: "© 2026 Sarah Ursula Randriarivelo. Tous droits réservés.",
+        footer_tech: ""
+      }
+    };
+
+    // Language & Theme Logic
+    const langToggle = document.getElementById('langToggle');
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    function setLanguage(lang) {
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (t[key]) el.placeholder = t[key];
+      });
+      html.setAttribute('lang', lang);
+      localStorage.setItem('portfolio-lang', lang);
+      langToggle.textContent = lang === 'fr' ? 'FR' : 'EN';
+    }
+
+    const savedLang = localStorage.getItem('portfolio-lang') || 'en';
+    setLanguage(savedLang);
+
+    langToggle.addEventListener('click', () => {
+      const current = localStorage.getItem('portfolio-lang') || 'en';
+      setLanguage(current === 'en' ? 'fr' : 'en');
+    });
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    themeToggle.innerHTML = savedTheme === 'light' 
+  ? `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`
+  : `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      themeToggle.innerHTML = next === 'light'
+  ? `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`
+  : `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
 </html>
